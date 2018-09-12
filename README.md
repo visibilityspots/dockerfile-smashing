@@ -2,8 +2,10 @@
 Run [smashing](https://github.com/Smashing/smashing) in a [Docker](http://docker.io/) container.
 
 Originated from: [frvi/dashing](https://registry.hub.docker.com/u/frvi/dashing/)
+
 Link: [visibilityspots/smashing](https://registry.hub.docker.com/u/visibilityspots/smashing/)
 
+[![Anchore Image Overview](https://anchore.io/service/badges/image/316adb3394c43dd1caf39ccf4d9799bf9bcee549cb3aa77eee9f46e24a30ceb3)](https://anchore.io/image/dockerhub/visibilityspots%2Fsmashing%3Alatest)
 
 
 ## Run
