@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 function install_widgets() {
   WIDGETS=$@
