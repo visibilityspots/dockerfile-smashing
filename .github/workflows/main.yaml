@@ -36,3 +36,4 @@ jobs:
           push: true
           tags: |
             visibilityspots/smashing:latest
+            visibilityspots/smashing:v1.3.6
