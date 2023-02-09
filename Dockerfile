@@ -2,7 +2,8 @@ FROM ruby:3.2.1-alpine3.17
 
 RUN apk add --update --no-cache build-base openssl-dev tzdata nodejs && \
     gem update --system && \
-    gem install bundler smashing
+    gem install bundler && \
+    gem install smashing -v 1.3.6
 
 RUN mkdir /smashing && \
     smashing new smashing && \
