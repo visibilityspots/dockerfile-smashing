@@ -1,0 +1,62 @@
+file:
+  /assets:
+    exists: true
+    linked-to: /smashing/assets
+    filetype: symlink
+    contains: []
+  /config:
+    exists: true
+    linked-to: /smashing/config
+    filetype: symlink
+    contains: []
+  /dashboards:
+    exists: true
+    linked-to: /smashing/dashboards
+    filetype: symlink
+    contains: []
+  /lib-smashing:
+    exists: true
+    linked-to: /smashing/lib
+    filetype: symlink
+    contains: []
+  /public:
+    exists: true
+    linked-to: /smashing/public
+    filetype: symlink
+    contains: []
+  /run.sh:
+    exists: true
+    mode: "0755"
+    owner: root
+    group: root
+    filetype: file
+    contains: []
+    sha512: 588940b205e613d548ceeffd1cd33040ec7ae63697d492dc0632352e1efc86f0524de5c29a192f54ff6bbe5d9611c38b3b98bef80ef93f2c280e0d0b82448218
+  /smashing:
+    exists: true
+    filetype: directory
+    contains: []
+  /smashing/config:
+    exists: true
+    filetype: directory
+    contains: []
+  /smashing/config.ru:
+    exists: true
+    linked-to: /smashing/config/config.ru
+    filetype: symlink
+    contains: []
+  /widgets:
+    exists: true
+    linked-to: /smashing/widgets
+    filetype: symlink
+    contains: []
+command:
+  smashing --version:
+    exit-status: 0
+    stdout:
+    - 1.3.6
+    stderr: []
+    timeout: 0
+process:
+  smashing:
+    running: true
