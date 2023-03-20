@@ -2,11 +2,8 @@ name: ci
 
 on:
   push:
-    branches: [ master ]
-  workflow_dispatch:
-  schedule:
-  - cron: "0 8 * * 1"
-
+    tags:
+      - '*'
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -53,4 +50,9 @@ jobs:
           push: true
           tags: |
             visibilityspots/smashing:latest
-            visibilityspots/smashing:v1.3.6
+            visibilityspots/smashing:${{ github.ref_name }}
+
+      - name: Create github release
+        uses: ncipollo/release-action@v1
+        with:
+          makeLatest: true
