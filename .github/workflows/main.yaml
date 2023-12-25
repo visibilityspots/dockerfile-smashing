@@ -17,7 +17,7 @@ jobs:
         run: docker build -t visibilityspots/smashing:dev .
 
       - name: Install Goss
-        uses: e1himself/goss-installation-action@v1.1.0
+        uses: e1himself/goss-installation-action@v1.2.1
         with:
           version: 'v0.3.20'
 
