@@ -1,4 +1,4 @@
-FROM ruby:3.2.1-alpine3.17
+FROM ruby:3.3.3-alpine3.20
 
 RUN apk add --update --no-cache build-base openssl-dev tzdata nodejs && \
     gem update --system && \
