@@ -29,4 +29,3 @@ EXPOSE $PORT
 WORKDIR /smashing
 
 CMD ["/run.sh"]
-
