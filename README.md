@@ -1,6 +1,6 @@
 # smashing
 
-[![build status](https://github.com/visibilityspots/dockerfile-smashing/actions/workflows/main.yaml/badge.svg)](https://github.com/visibilityspots/dockerfile-smashing/actions/workflows/main.yaml)
+[![build status](https://github.com/visibilityspots/dockerfile-smashing/actions/workflows/main.yml/badge.svg)](https://github.com/visibilityspots/dockerfile-smashing/actions/workflows/main.yml)
 [![docker image size](https://img.shields.io/docker/image-size/visibilityspots/smashing/latest)](https://hub.docker.com/r/visibilityspots/smashing)
 [![docker pulls](https://img.shields.io/docker/pulls/visibilityspots/smashing.svg)](https://hub.docker.com/r/visibilityspots/smashing/)
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
