@@ -1,42 +1,12 @@
-# This workflow uses actions that are not certified by GitHub.
-# They are provided by a third-party and are governed by
-# separate terms of service, privacy policy, and support
-# documentation.
-
 name: trivy
 
 on:
   push:
     tags:
       - '*'
-
-permissions:
-  contents: read
+  schedule:
+    - cron: '44 19 * * 4'
 
 jobs:
   scan:
-    permissions:
-      contents: read
-      security-events: write
-    runs-on: "ubuntu-latest"
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Build an image from Dockerfile
-        run: |
-          docker build -t visibilityspots/smashing:dev .
-
-      - name: Run Trivy vulnerability scanner
-        uses: aquasecurity/trivy-action@0.28.0
-        with:
-          image-ref: 'visibilityspots/smashing:dev'
-          format: 'sarif'
-          output: 'trivy-results.sarif'
-          ignore-unfixed: true
-          severity: 'CRITICAL,HIGH'
-
-      - name: Upload Trivy scan results to GitHub Security tab
-        uses: github/codeql-action/upload-sarif@v3
-        with:
-          sarif_file: 'trivy-results.sarif'
+    uses: visibilityspots/dockerfile-cloudflared/.github/workflows/trivy.yml@main
