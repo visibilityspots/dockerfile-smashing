@@ -1,6 +1,6 @@
-FROM ruby:3.3.5-alpine3.20
+FROM ruby:3.3.6-alpine3.20
 
-RUN apk add --update --no-cache build-base openssl-dev tzdata nodejs && \
+RUN apk add --no-cache build-base openssl-dev tzdata nodejs && \
     gem update --system && \
     gem install bundler && \
     gem install smashing -v 1.3.6
