@@ -1,9 +1,11 @@
 # smashing
 
 [![build status](https://github.com/visibilityspots/dockerfile-smashing/actions/workflows/main.yml/badge.svg)](https://github.com/visibilityspots/dockerfile-smashing/actions/workflows/main.yml)
+[![gitHub release](https://img.shields.io/github/v/release/visibilityspots/dockerfile-smashing)](https://github.com/visibilityspots/dockerfile-smashing/releases)
 [![docker image size](https://img.shields.io/docker/image-size/visibilityspots/smashing/latest)](https://hub.docker.com/r/visibilityspots/smashing)
 [![docker pulls](https://img.shields.io/docker/pulls/visibilityspots/smashing.svg)](https://hub.docker.com/r/visibilityspots/smashing/)
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fvisibilityspots%2Fdockerfile-smashing.svg?type=shield&issueType=license)](https://app.fossa.com/projects/git%2Bgithub.com%2Fvisibilityspots%2Fdockerfile-smashing?ref=badge_shield&issueType=license)
 
 Run [smashing](https://github.com/Smashing/smashing) in a [Docker](http://docker.io/) container.
 

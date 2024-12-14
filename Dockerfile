@@ -1,13 +1,16 @@
 FROM ruby:3.3.6-alpine3.21
 
+ARG SMASHING_VERSION=1.3.5
+
 RUN apk add --no-cache build-base openssl-dev tzdata nodejs && \
     gem update --system && \
     gem install bundler && \
-    gem install smashing -v 1.3.6
+    gem install smashing -v $SMASHING_VERSION
 
 RUN mkdir /smashing && \
     smashing new smashing && \
     cd /smashing && \
+    sed -i "s/smashing.*/&, \"${SMASHING_VERSION}\"/g" Gemfile && \
     bundle && \
     ln -s /smashing/dashboards /dashboards && \
     ln -s /smashing/jobs /jobs && \
