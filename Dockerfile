@@ -1,6 +1,6 @@
 FROM ruby:3.3.6-alpine3.21
 
-ARG SMASHING_VERSION=1.3.5
+ARG SMASHING_VERSION=1.3.6
 
 RUN apk add --no-cache build-base openssl-dev tzdata nodejs && \
     gem update --system && \
