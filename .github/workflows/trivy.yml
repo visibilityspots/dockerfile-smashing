@@ -9,4 +9,4 @@ on:
 
 jobs:
   scan:
-    uses: visibilityspots/dockerfile-cloudflared/.github/workflows/trivy.yml@main
+    uses: visibilityspots/github-workflows/.github/workflows/trivy.yml@main
