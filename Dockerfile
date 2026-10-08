@@ -1,4 +1,4 @@
-FROM ruby:3.3.7-alpine3.21
+FROM ruby:3.3.12-alpine3.24
 
 ARG SMASHING_VERSION=1.3.6
 
